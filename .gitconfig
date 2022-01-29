@@ -1,0 +1,5 @@
+[core]
+	autocrlf = true
+[user]
+	name = evangelos-ch
+	email = angelos.h@hotmail.com
