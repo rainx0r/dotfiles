@@ -1,0 +1,111 @@
+[
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "sideBarFocus && explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "sideBarFocus && explorerViewletVisible && !filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.panel.chat.view.copilot.focus"
+    },
+    {
+        "key": "alt+r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == kagex",
+        "args": {
+            "langId": "kagex",
+            "name": "Ruby"
+        }
+    },
+    {
+        "key": "cmd+oem_minus",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == kagex",
+        "args": {
+            "langId": "kagex",
+            "name": "Em Dash"
+        }
+    },
+    {
+        "key": "cmd+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == kagex",
+        "args": {
+            "langId": "kagex",
+            "name": "Italics"
+        }
+    },
+    {
+        "key": "shift+'",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == kagex",
+        "args": {
+            "langId": "kagex",
+            "name": "Double Quotes"
+        }
+    },
+    {
+        "key": "cmd+'",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == kagex",
+        "args": {
+            "langId": "kagex",
+            "name": "Single Quotes"
+        }
+    }
+]

@@ -1,0 +1,90 @@
+{
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "　": true,
+        "‘": true,
+        "’": true
+    },
+    "terminal.integrated.fontFamily": "Hack Nerd Font, Hack NF",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
+    "editor.wordWrap": "on",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.analysis.typeCheckingMode": "off",
+    "python.formatting.provider": "black",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*.egg-info": true
+    },
+    "cSpell.maxNumberOfProblems": 99999999999,
+    "terminal.integrated.gpuAcceleration": "off",
+    "explorer.confirmDelete": false,
+    "cSpell.userWords": [
+        "argnums",
+        "astype",
+        "discretisation",
+        "dtype",
+        "jaxtyping",
+        "logits",
+        "multinomial",
+        "PRNG",
+        "psutil",
+        "Timestep",
+        "tqdm",
+        "unsqeueeze"
+    ],
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Fira Code', Hack, 'Hack Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.lineNumbers": "relative",
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.colorCustomizations": {
+        "statusBar.noFolderBackground": "#21242a"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.inlineSuggest.enabled": true,
+    "powershell.promptToUpdatePowerShell": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false,
+        "kagex": false
+    },
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "svelte.enable-ts-plugin": true,
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "[toml]": {
+        "editor.defaultFormatter": "bodil.prettier-toml"
+    },
+    "black-formatter.args": ["--line-length", "120"],
+    "workbench.colorTheme": "Ariake Dark",
+    "python.languageServer": "Pylance",
+    "explorer.sortOrderLexicographicOptions": "unicode",
+    "window.restoreWindows": "none",
+    "mypy.runUsingActiveInterpreter": true
+}

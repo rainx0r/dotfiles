@@ -1,0 +1,59 @@
+# Auto-loading script-additions
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# Debug
+yabai -m config debug_output on
+
+# Layout
+yabai -m config layout bsp
+yabai -m config mouse_follows_focus on
+yabai -m config window_placement second_child
+yabai -m config window_topmost off
+yabai -m config window_shadow on
+yabai -m config window_border off 
+yabai -m config window_opacity off 
+yabai -m config active_window_border_color 0xff00ffbb
+yabai -m config normal_window_border_color 0x01000000
+yabai -m config window_border_width 8
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 1.0
+yabai -m config split_ratio 0.5
+yabai -m config auto_balance off
+
+# Gaps
+yabai -m config top_padding 10
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+yabai -m config window_gap 10
+yabai -m config external_bar main:30:60
+
+# Spaces
+## display 1
+### space 1: web
+yabai -m rule --add app="Safari" space=^1
+yabai -m rule --add app="Firefox*" space=^1
+yabai -m rule --add app="Mail" space=^1
+yabai -m rule --add app="Discord Canary" space=^1 opacity=0.98
+yabai -m rule --add app="Microsoft Teams" space=^1 opacity=0.98
+
+### space 2: dev
+yabai -m rule --add app="Code" space=^2
+
+### space 3: tasks
+yabai -m rule --add app="Calendar" space=^3 opacity=0.98
+yabai -m rule --add app="Things" space=^3 opacity=0.98
+
+### space 4: media 
+yabai -m rule --add app="Music" space=^4
+yabai -m rule --add app="Podcasts" space=^4
+
+# Floating
+yabai -m rule --add app="choose" manage=off mouse_follows_focus=off
+yabai -m rule --add app="System Preferences" manage=off
+yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
+
+# Popup Fix
+# applications = "(Calendar|Mail|Safari|Music)"
+# yabai -m rule --add app="^${applications}" manage=on layer=below

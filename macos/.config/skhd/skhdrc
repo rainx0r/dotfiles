@@ -1,0 +1,51 @@
+# General window management
+alt - e : yabai -m window --toggle split
+alt - r : yabai -m space --rotate 90
+alt - t : yabai -m window --toggle float
+
+alt - d : yabai -m window --toggle zoom-parent
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+alt - x : yabai -m window --close
+
+# Focus
+alt - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+# Window swap
+alt + shift - h : yabai -m window --swap west
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - l : yabai -m window --swap east
+
+# Move window
+alt + ctrl - h : yabai -m window --warp west
+alt + ctrl - j : yabai -m window --warp south
+alt + ctrl - k : yabai -m window --warp north
+alt + ctrl - l : yabai -m window --warp east
+
+# Send window to monitor
+# alt - 1 : yabai -m window --display 1
+# alt - 2 : yabai -m window --display 2
+# alt - 3 : yabai -m window --display 3
+
+# Switch to space
+hyper - tab : yabai -m space --focus recent
+hyper - w : yabai -m space --focus 1
+hyper - c : yabai -m space --focus 2
+
+hyper - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+hyper - j : yabai -m window --focus south
+hyper - k : yabai -m window --focus north
+hyper - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+hyper - m : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app == "Music") | .id');
+hyper - d : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app == "Discord Canary") | .id');
+hyper - a : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app == "Asana") | .id');
+hyper - v : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app == "Things") | .id');
+
+hyper - r : yabai -m window --toggle topmost; yabai -m window --toggle topmost
+
+hyper - t : skhd -k "cmd - space"

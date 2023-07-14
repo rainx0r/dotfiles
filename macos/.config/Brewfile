@@ -1,0 +1,28 @@
+# Taps
+tap "homebrew/cask"
+
+# Shell utils
+brew "exa"
+
+# Dev
+brew "python@3.11"
+brew "node"
+brew "yarn"
+brew "docker"
+brew "neovim"
+
+# Git
+brew "gh"
+brew "ghq"
+brew "git"
+
+# App store automation
+brew "mas"
+
+# Casks
+cask "ubersicht"  # Desktop widgets
+cask "warp" # Terminal emulator
+cask "karabiner-elements" # Keyboard remapping
+cask "aldente" # Battery manager, only used sometimes 
+cask "visual-studio-code"  # Code editor
+cask "obsidian"  # Notes
