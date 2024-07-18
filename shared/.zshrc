@@ -1,3 +1,5 @@
+bindkey -v
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
@@ -6,24 +8,23 @@ prompt_context() {}
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git z vscode node npm yarn python poetry docker xcode)
+plugins=(git sudo web-search z vscode node npm yarn python poetry docker xcode vi-mode)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.config/zsh/utils.zsh
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
 
-alias ls='exa --group-directories-first --icons --color-scale -l -g' # --time-style=iso
-alias lt='exa --tree --level=2 --icons' # Show in tree view
-alias l='ls -a'                         # Short, all files
-alias ld='l -D'                         # Short, only directories
-alias ll='ls -lbG --git'                # Long, file size prefixes, grid, git status
-alias la='ll -a'                        # Long, all files
-alias lC='la --sort=changed'            # Long, sort changed
-alias lM='la --sort=modified'           # Long, sort modified
-alias lS='la --sort=size'               # Long, sort size
-alias lX='la --sort=extension'          # Long, sort extension
+alias ls='lsd'
+alias lt='ls --tree'
+alias l='ls -l'
+alias lla='ls -la'
+alias la='ls -a'
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+alias cat='bat --paging=never'
 
-source ~/.config/zsh/peco.zsh
+# MacOS Extensions
+import_if_exists $HOME/.config/zsh/colab.zsh
+import_if_exists $HOME/.config/zsh/iterm2.zsh
+import_if_exists $HOME/.config/zsh/vars.zsh
