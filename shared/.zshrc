@@ -25,6 +25,7 @@ plugins=(
     docker
     xcode
     vi-mode
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 
