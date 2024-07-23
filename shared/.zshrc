@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-bindkey -v
-
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -27,6 +25,7 @@ plugins=(
     vi-mode
     zsh-autosuggestions
     zsh-syntax-highlighting
+    fzf-tab
 )
 
 # NOTE https://github.com/zsh-users/zsh-completions/issues/603
@@ -53,3 +52,12 @@ import_if_exists $HOME/.config/zsh/vars.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f $HOME/.config/zsh/p10k.zsh ]] || source $HOME/.config/zsh/p10k.zsh
+
+# fzf
+eval "$(fzf --zsh)"
+zstyle ':completion:*:git-checkout:*' sort false
+# zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color always $realpath'

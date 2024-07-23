@@ -1,6 +1,7 @@
 # Shell utils
 brew "lsd"
 brew "bat"
+brew "fzf"
 
 # Dev
 brew "python@3.12"
