@@ -1,3 +1,9 @@
 [submodule "shared/.oh-my-zsh/custom/themes/powerlevel10k"]
 	path = shared/.oh-my-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "shared/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = shared/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "shared/.oh-my-zsh/custom/plugins/zsh-completions"]
+	path = shared/.oh-my-zsh/custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions

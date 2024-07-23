@@ -15,7 +15,21 @@ prompt_context() {}
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git sudo web-search z vscode node npm yarn python poetry docker xcode vi-mode)
+plugins=(
+    git sudo
+    web-search
+    z
+    vscode
+    node npm yarn
+    python poetry
+    docker
+    xcode
+    vi-mode
+    zsh-syntax-highlighting
+)
+
+# NOTE https://github.com/zsh-users/zsh-completions/issues/603
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.config/zsh/utils.zsh
