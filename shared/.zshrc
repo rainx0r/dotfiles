@@ -82,6 +82,9 @@ setopt hist_find_no_dups
 
 # fzf
 eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS="-e \
+   --color pointer:14,hl:6,hl+:14,border:12,prompt:4"
+zstyle ':fzf-tab:*' fzf-flags $(echo $FZF_DEFAULT_OPTS)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
