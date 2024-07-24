@@ -21,6 +21,9 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::command-not-found
 
 # OS-specific
 if [[ $(uname) == "Darwin" ]]; then # MacOS Extensions
@@ -62,6 +65,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^f' autosuggest-accept
 
 # History
 HISTSIZE=5000
@@ -85,9 +89,6 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color always $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd --color always $realpath'
-zinit snippet OMZP::git
-zinit snippet OMZP::sudo
-zinit snippet OMZP::command-not-found
 
 # z
 eval "$(zoxide init --cmd cd zsh)"
@@ -95,3 +96,4 @@ eval "$(zoxide init --cmd cd zsh)"
 # Inits
 autoload -U compinit && compinit
 zinit cdreplay -q
+unset ZSH_AUTOSUGGEST_USE_ASYNC  # Needed to fix p10k x OMZP::git
