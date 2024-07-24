@@ -28,7 +28,6 @@ zinit snippet OMZP::command-not-found
 # OS-specific
 if [[ $(uname) == "Darwin" ]]; then # MacOS Extensions
     import_if_exists $HOME/.config/zsh/colab.zsh
-    import_if_exists $HOME/.config/zsh/iterm2.zsh
     import_if_exists $HOME/.config/zsh/macos_vars.zsh
     zinit snippet OMZP::xcode
 elif command -v pacman > /dev/null; then # Arch Extensions
