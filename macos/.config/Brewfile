@@ -3,6 +3,7 @@ brew "lsd"
 brew "bat"
 brew "fzf"
 brew "zoxide"
+brew "ripgrep"
 
 # Dev
 brew "python@3.12"
