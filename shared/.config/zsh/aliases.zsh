@@ -5,3 +5,5 @@ alias lla='ls -la'
 alias la='ls -a'
 
 alias cat='bat --paging=never'
+
+alias vim='nvim'
