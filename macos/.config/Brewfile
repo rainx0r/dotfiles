@@ -12,6 +12,7 @@ brew "yarn"
 brew "docker"
 brew "neovim"
 brew "modular"
+brew "tmux"
 
 # Git
 brew "gh"
