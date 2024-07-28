@@ -95,7 +95,17 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd --color always $realpat
 # z
 eval "$(zoxide init --cmd cd zsh)"
 
+# Autocomplete
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+
 # Inits
 autoload -U compinit && compinit
 zinit cdreplay -q
 unset ZSH_AUTOSUGGEST_USE_ASYNC  # Needed to fix p10k x OMZP::git
+
+# Pyenv
+if command -v pyenv > /dev/null; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi

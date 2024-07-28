@@ -7,6 +7,8 @@ brew "ripgrep"
 
 # Dev
 brew "python@3.12"
+brew "poetry"
+brew "pyenv"
 brew "node"
 brew "yarn"
 brew "docker"
