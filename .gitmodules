@@ -1,3 +1,6 @@
 [submodule "shared/.config/nvim"]
 	path = shared/.config/nvim
 	url = https://github.com/rainx0r/kickstart.nvim
+[submodule "shared/.config/tmux/tpm"]
+	path = shared/.config/tmux/tpm
+	url = https://github.com/tmux-plugins/tpm
