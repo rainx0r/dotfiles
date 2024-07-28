@@ -20,7 +20,7 @@ done
 if [ "$SKIP_SYSTEM_DEPS" = false ]
 then
     # Install dependencies
-    sudo pacman -S bat lsd fzf zoxide ripgrep
+    sudo pacman -S stow 
 else
     echo "Skipping system installs"
 fi
