@@ -3,31 +3,25 @@ SKIP_LINKS=false
 SKIP_PKG_DEPS=false
 
 # Parse command line arguments
-for arg in "$@"
-do
-    if [ "$arg" = "--no-system" ]
-    then
+for arg in "$@"; do
+    if [ "$arg" = "--no-system" ]; then
         SKIP_SYSTEM_DEPS=true
-    elif [ "$arg" = "--no-links" ]
-    then
+    elif [ "$arg" = "--no-links" ]; then
         SKIP_LINKS=true
-    elif [ "$arg" = "--no-packages" ]
-    then
+    elif [ "$arg" = "--no-packages" ]; then
         SKIP_PKG_DEPS=true
     fi
 done
 
-if [ "$SKIP_SYSTEM_DEPS" = false ]
-then
+if [ "$SKIP_SYSTEM_DEPS" = false ]; then
     # Install dependencies
-    sudo pacman -S stow 
+    sudo pacman -S stow
 else
     echo "Skipping system installs"
 fi
 
 # Symlink files
-if [ "$SKIP_LINKS" = false ]
-then
+if [ "$SKIP_LINKS" = false ]; then
     if [ ! -d "shared" ]; then
         echo "Please call this script from the root of the 'dotfiles' directory." >&2
         exit 1
@@ -38,10 +32,9 @@ else
 fi
 
 # Install software
-if [ "$SKIP_PKG_DEPS" = false ]
-then
+if [ "$SKIP_PKG_DEPS" = false ]; then
     # Install dependencies
-    sudo pacman -S bat lsd fzf zoxide ripgrep
+    sudo pacman -S bat lsd fzf zoxide ripgrep neovim lazygit
 else
     echo "Skipping package dependencies"
 fi

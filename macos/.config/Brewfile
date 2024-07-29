@@ -15,8 +15,10 @@ brew "docker"
 brew "neovim"
 brew "modular"
 brew "tmux"
+brew "lazydocker"
 
 # Git
 brew "gh"
 brew "ghq"
 brew "git"
+brew "lazygit"

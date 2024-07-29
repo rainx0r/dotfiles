@@ -7,7 +7,9 @@
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-w": "pane::ActivateNextItem",
       "ctrl-q": "pane::ActivatePrevItem",
-      "ctrl-x": "pane::CloseActiveItem"
+      "ctrl-x": "pane::CloseActiveItem",
+      "ctrl-%": "pane::SplitRight",
+      "ctrl-|": "pane::SplitDown"
     }
   },
   {
@@ -63,6 +65,12 @@
       "ctrl-w g shift-d": null,
       "ctrl-w space": null,
       "ctrl-w g space": null
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "ctrl-y": "editor::ConfirmCompletion"
     }
   }
 ]
