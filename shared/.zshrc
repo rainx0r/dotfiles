@@ -15,6 +15,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 source $HOME/.config/zsh/aliases.zsh
 source $HOME/.config/zsh/vars.zsh
 source $HOME/.config/zsh/utils.zsh
+source $HOME/.config/zsh/widgets.zsh
 
 # Plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -65,6 +66,7 @@ bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^f' autosuggest-accept
+bindkey '^g' tmux-sessionizer
 
 # History
 HISTSIZE=5000

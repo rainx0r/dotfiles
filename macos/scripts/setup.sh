@@ -5,18 +5,18 @@ SKIP_MISC=false
 
 # Parse command line arguments
 for arg in "$@"; do
-    if [ "$arg" = "--no-system" ]; then
+    if [[ $arg = "--no-system" ]]; then
         SKIP_INSTALL=true
-    elif [ "$arg" = "--no-links" ]; then
+    elif [[ $arg = "--no-links" ]]; then
         SKIP_LINKS=true
-    elif [ "$arg" = "--no-brew" ]; then
+    elif [[ $arg = "--no-brew" ]]; then
         SKIP_BREW=true
-    elif [ "$arg" = "--no-misc" ]; then
+    elif [[ $arg = "--no-misc" ]]; then
         SKIP_MISC=true
     fi
 done
 
-if [ "$SKIP_INSTALL" = false ]; then
+if [[ $SKIP_INSTALL = false ]]; then
     # Install brew
     curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
     brew install stow
@@ -25,7 +25,7 @@ else
 fi
 
 # Symlink files
-if [ "$SKIP_LINKS" = false ]; then
+if [[ $SKIP_LINKS = false ]]; then
     if [ ! -d "macos" ] && [ ! -d "shared" ]; then
         echo "Please call this script from the root of the 'dotfiles' directory." >&2
         exit 1
@@ -37,14 +37,14 @@ else
 fi
 
 # Install software
-if [ "$SKIP_BREW" = false ]; then
+if [[ $SKIP_BREW = false ]]; then
     brew bundle --file ~/.config/Brewfile
 else
     echo "Skipping brew installs"
 fi
 
 # Set up VSCode
-if [ "$SKIP_MISC" = false ]; then
+if [[ $SKIP_MISC = false ]]; then
     echo "- Setting up VSCode..."
     cp -r vscode/* ~/Library/Application\ Support/Code/User/
     echo "- - VSCode set up!"
