@@ -15,6 +15,12 @@ brew "neovim"
 brew "modular"
 brew "tmux"
 brew "lazydocker"
+brew "cmake"
+brew "ninja"
+brew "gdb"
+
+# RE
+cask "ghidra"
 
 # Git
 brew "gh"

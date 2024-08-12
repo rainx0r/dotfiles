@@ -66,7 +66,7 @@
         "editor.document_highlight.read_background": null,
         "editor.document_highlight.write_background": null,
         "link_text.hover": "#00C2FFff",
-        "conflict": "#a3fff0ff",
+        "conflict": "#CC0044ff",
         "conflict.background": "#9685e733",
         "conflict.border": "#9685e720",
         "created": "#66FFDEff",

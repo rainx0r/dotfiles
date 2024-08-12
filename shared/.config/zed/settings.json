@@ -25,6 +25,7 @@
   "inlay_hints": {
     "enabled": true
   },
+  "soft_wrap": "editor_width",
   "ui_font_family": "Hack Nerd Font Mono",
   "buffer_font_family": "Hack Nerd Font Mono",
   "terminal": {
