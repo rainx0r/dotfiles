@@ -33,6 +33,7 @@ if [[ $(uname) == "Darwin" ]]; then # MacOS Extensions
     zinit snippet OMZP::xcode
 elif command -v pacman > /dev/null; then # Arch Extensions
     zinit snippet OMZP::archlinux
+    import_if_exists $HOME/.config/zsh/linux_vars.zsh
 fi
 
 # Tool-specific

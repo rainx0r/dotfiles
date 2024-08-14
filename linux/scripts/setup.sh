@@ -27,6 +27,7 @@ if [[ $SKIP_LINKS = false ]]; then
         exit 1
     fi
     stow -t $HOME --adopt shared
+    stow -t $HOME --adopt linux
 else
     echo "Skipping symlinks"
 fi
