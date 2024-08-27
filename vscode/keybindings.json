@@ -36,14 +36,6 @@
         "when": "sideBarFocus && explorerViewletVisible && !filesExplorerFocus"
     },
     {
-        "key": "ctrl+shift+\\",
-        "command": "workbench.action.splitEditorRight"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "workbench.action.splitEditorDown"
-    },
-    {
         "key": "ctrl+w",
         "command": "workbench.action.nextEditorInGroup"
     },
@@ -52,17 +44,44 @@
         "command": "workbench.action.previousEditorInGroup"
     },
     {
-        "key": "ctrl+n",
+        "key": "ctrl+x",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "acceptSelectedSuggestion"
+    },
+    // Explorer
+    {
+        "key": "ctrl+\\",
         "command": "workbench.view.explorer"
     },
-    {
-        "key": "ctrl+g",
-        "command": "workbench.view.scm"
+        {
+        "key": "cmd+enter",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
     },
     {
-        "key": "ctrl+i",
-        "command": "workbench.panel.chat.view.copilot.focus"
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
     },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "s",
+        "command": "explorer.openToSide",
+        "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
+    },
+    {
+        "key": "/",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    // Kagex
     {
         "key": "alt+r",
         "command": "editor.action.insertSnippet",
@@ -109,3 +128,4 @@
         }
     }
 ]
+

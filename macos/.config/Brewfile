@@ -7,23 +7,28 @@ brew "ripgrep"
 
 # Dev
 brew "python@3.12"
+brew "uv"
 brew "poetry"
+brew "modular"
+
 brew "node"
 brew "yarn"
+
 brew "docker"
-brew "neovim"
-brew "modular"
-brew "tmux"
 brew "lazydocker"
+
+brew "neovim"
+brew "tmux"
+
 brew "cmake"
 brew "ninja"
-brew "gdb"
-
-# RE
-cask "ghidra"
 
 # Git
 brew "gh"
 brew "ghq"
 brew "git"
 brew "lazygit"
+
+# Casks 
+cask "karabiner-elements"
+cask "ghidra"
