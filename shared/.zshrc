@@ -55,7 +55,6 @@ fi
 
 if command -v python3 > /dev/null; then
     zinit snippet OMZP::python
-    zinit snippet OMZP::poetry
 fi
 
 # Theme
