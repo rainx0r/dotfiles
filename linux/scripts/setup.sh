@@ -26,8 +26,8 @@ if [[ $SKIP_LINKS = false ]]; then
         echo "Please call this script from the root of the 'dotfiles' directory." >&2
         exit 1
     fi
-    stow -t $HOME --adopt shared
-    stow -t $HOME --adopt linux
+    stow -t "$HOME" --adopt shared
+    stow -t "$HOME" --adopt linux
 else
     echo "Skipping symlinks"
 fi

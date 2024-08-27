@@ -7,9 +7,7 @@ setup_vsc() {
 setup_safari() {
     # Set Safari CSS
     echo "- Setting up Safari CSS..."
-    defaults write com.apple.safari UserStyleSheetEnabled 1\
-    && defaults write com.apple.safari UserStyleSheetLocationURLString "~/.config/safari.css"\
-    && defaults write com.apple.safari WebKitUserStyleSheetEnabledPreferenceKey 1\
-    && defaults write com.apple.safari WebKitUserStyleSheetLocationPreferenceKey "~/.config/safari.css"
+    defaults write com.apple.safari UserStyleSheetEnabled 1 && defaults write com.apple.safari UserStyleSheetLocationURLString "$HOME/.config/safari.css" &&
+        defaults write com.apple.safari WebKitUserStyleSheetEnabledPreferenceKey 1 && defaults write com.apple.safari WebKitUserStyleSheetLocationPreferenceKey "$HOME/.config/safari.css"
     echo "- - Safari CSS set up!"
 }
