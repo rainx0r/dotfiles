@@ -4,9 +4,9 @@ install_brew() {
     brew install stow
 }
 
-install_nix() {
-    sh <(curl -L https://nixos.org/nix/install)
-}
+# install_nix() {
+#     sh <(curl -L https://nixos.org/nix/install)
+# }
 
 install_system_deps() {
     # install_nix
