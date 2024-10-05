@@ -8,7 +8,9 @@ brew "ripgrep"
 # Dev
 brew "python@3.12"
 brew "uv"
-brew "poetry"
+brew "ruff"
+brew "pyright"
+brew "basedpyright"
 brew "modular"
 
 brew "node"
@@ -29,6 +31,7 @@ brew "ghq"
 brew "git"
 brew "lazygit"
 
-# Casks 
+# Casks
 cask "karabiner-elements"
 cask "ghidra"
+cask "iina"
