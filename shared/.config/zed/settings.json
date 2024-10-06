@@ -52,5 +52,18 @@
       "custom": 1.15
     },
     "font_size": 14
-  }
+  },
+  "file_scan_exclusions": [
+    "**/__pycache__",
+    "**/.DS_Store",
+    "**/*.egg-info",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.ruff_cache",
+    "**/.vscode",
+    "**/.idea",
+    "**/.git",
+    "**/.venv",
+    "**/venv"
+  ]
 }
