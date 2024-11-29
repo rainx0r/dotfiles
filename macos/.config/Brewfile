@@ -25,6 +25,9 @@ brew "tmux"
 brew "cmake"
 brew "ninja"
 
+brew "ghcup"
+brew "zig"
+
 # Git
 brew "gh"
 brew "ghq"
