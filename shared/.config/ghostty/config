@@ -1,3 +1,13 @@
-font-family = "Hack Nerd Font Mono"
+font-family = "Monaspace Xenon"
 font-size = 16
 theme = rainx0r
+cursor-style-blink = true
+minimum-contrast = 1.1
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = 00C2FF
+macos-icon-screen-color = F8FBFC

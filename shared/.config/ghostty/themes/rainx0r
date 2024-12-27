@@ -1,8 +1,8 @@
 background = 0E181B
 foreground = F8FBFC
-cursor = 00C2FF
-selection_background = F8FBFC
-selection_foreground = 0E181B
+cursor-color = 00C2FF
+selection-background = F8FBFC
+selection-foreground = 0E181B
 
 # Normal colours
 palette = 0=0E181B
@@ -33,3 +33,6 @@ palette = 20=00C2FF
 palette = 21=9DB4BB
 palette = 22=66E6FF
 palette = 23=D9E5E8
+
+# Extra
+palette = 17=1E2D31
