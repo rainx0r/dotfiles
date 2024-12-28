@@ -101,7 +101,11 @@ eval "$(zoxide init --cmd cd zsh)"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
 # Inits
-autoload -U compinit && compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 zinit cdreplay -q
 unset ZSH_AUTOSUGGEST_USE_ASYNC  # Needed to fix p10k x OMZP::git
 
+if [[ $(uname) == "Darwin" ]]; then # MacOS Inits
+    import_if_exists $HOME/.config/zsh/macos_inits.zsh
+fi

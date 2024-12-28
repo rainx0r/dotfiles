@@ -33,6 +33,7 @@ brew "gh"
 brew "ghq"
 brew "git"
 brew "lazygit"
+brew "git-crypt"
 
 # Devops
 brew "azure-cli"
