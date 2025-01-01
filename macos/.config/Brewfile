@@ -40,6 +40,9 @@ brew "azure-cli"
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
 
+# Misc
+brew "fastfetch"
+
 # Casks
 cask "karabiner-elements"
 cask "ghidra"
