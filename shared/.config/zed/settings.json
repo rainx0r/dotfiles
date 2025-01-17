@@ -1,10 +1,23 @@
 {
+  "ssh_connections": [
+    {
+      "host": "workstation-local",
+      "projects": [
+        {
+          "paths": [
+            "~/Documents/Repositories/github.com/rainx0r/mtrl"
+          ]
+        }
+      ]
+    }
+  ],
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
     },
-    "version": "2"
+    "version": "2",
+    "enable_experimental_live_diffs": true
   },
   "theme": "rainx0r dark",
   "base_keymap": "VSCode",
