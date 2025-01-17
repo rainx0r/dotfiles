@@ -2,6 +2,7 @@ font-family = "Monaspace Xenon"
 font-size = 16
 theme = rainx0r
 cursor-style-blink = true
+adjust-cell-height = 30%
 
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
