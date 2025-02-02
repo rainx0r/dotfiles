@@ -21,7 +21,7 @@
               size = "72G";
               content = {
                 type = "swap";
-                resumeDevice = "true";
+                resumeDevice = true;
               };
             };
             root = {
